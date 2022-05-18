@@ -4,8 +4,8 @@ import bgContact from "../../assets/images/appointment.png";
 
 const Contact = () => {
   return (
-    <div style={{ background: `url(${bgContact})` }}>
-      <h3 className="text-primary text-xl font-bold text-center my-2">
+    <div className="pb-4" style={{ background: `url(${bgContact})` }}>
+      <h3 className="text-primary text-xl font-bold text-center my-6">
         Contact Us
       </h3>
       <h2 className="text-3xl font-bold text-center mb-2">
