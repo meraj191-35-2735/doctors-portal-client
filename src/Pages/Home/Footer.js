@@ -4,11 +4,8 @@ import footerBg from "../../assets/images/footer.png";
 
 const Footer = () => {
   return (
-    <div>
-      <footer
-        style={{ background: `url(${footerBg})`, backgroundSize: "cover" }}
-        class="footer p-10 mt-20"
-      >
+    <div style={{ background: `url(${footerBg})`, backgroundSize: "cover" }}>
+      <footer class="footer p-10 mt-20">
         <div>
           <span class="footer-title">Services</span>
           <Link to="/about">Branding</Link>
@@ -30,7 +27,7 @@ const Footer = () => {
           <Link to="/contactus">Cookie policy</Link>
         </div>
       </footer>
-      <div className="text-center pb-0 mb-0">
+      <div className="text-center py-3 mb-0">
         <p>Copyright © 2022 - All right reserved by Meraj</p>
       </div>
     </div>
