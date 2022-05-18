@@ -4,14 +4,19 @@ import Navbar from "./Pages/Shared/Navbar";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import LogIn from "./Pages/LogIn/LogIn";
+import AppointmentPage from "./Pages/AppointmentPage/AppointmentPage";
 
 function App() {
   return (
-    <div>
+    <div className="max-w-7xl px-12 mx-auto">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="about" element={<About></About>}></Route>
+        <Route
+          path="appointment"
+          element={<AppointmentPage></AppointmentPage>}
+        ></Route>
         <Route path="login" element={<LogIn></LogIn>}></Route>
       </Routes>
     </div>
