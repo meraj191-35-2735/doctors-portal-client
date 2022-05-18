@@ -14,17 +14,13 @@ const Contact = () => {
       <form className="flex flex-col justify-center items-center">
         <input
           type="email"
-          name="email"
-          id="email"
-          placeholder="Enter Your Email"
-          width="480x"
-          className="px-2 py-1 rounded-md my-3"
+          placeholder="Enter Email"
+          class="input input-bordered my-3 input-primary w-full max-w-xs"
         />
         <input
           type="text"
           placeholder="Subject"
-          className="px-2 py-1 rounded-md my-3"
-          width="480px"
+          class="input input-bordered input-primary w-full max-w-xs"
         />
         <textarea
           name="message"
@@ -32,7 +28,7 @@ const Contact = () => {
           cols="25"
           rows="5"
           placeholder="Type Your Message Here"
-          className="px-2 py-1 rounded-md my-3"
+          className="px-2 py-1 rounded-md my-3 input-bordered input-primary w-full max-w-xs"
         ></textarea>
         <PrimaryButton>Submit</PrimaryButton>
       </form>
