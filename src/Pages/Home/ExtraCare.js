@@ -1,11 +1,15 @@
 import React from "react";
 import treatment from "../../assets/images/treatment.png";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const ExtraCare = () => {
   return (
     <div class="hero min-h-screen ">
       <div class="hero-content flex-col lg:flex-row">
-        <img className="w-full lg:w-1/2 mr-auto lg:mr-10" src={treatment} />
+        <img
+          className="w-full lg:w-1/2 h-full lg:h-1/2 mr-auto lg:mr-10 rounded-lg"
+          src={treatment}
+        />
         <div className="ml-10">
           <h1 class="text-5xl font-bold">
             Exceptional Dental Care, on Your Terms
@@ -21,7 +25,7 @@ const ExtraCare = () => {
             encouraging. We believe that this success is due to our philosophy
             which centres on the interests of our patients.
           </p>
-          <button class="btn btn-primary">Get Started</button>
+          <PrimaryButton>Get Started</PrimaryButton>
         </div>
       </div>
     </div>
