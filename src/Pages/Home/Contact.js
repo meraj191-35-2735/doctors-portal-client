@@ -15,12 +15,12 @@ const Contact = () => {
         <input
           type="email"
           placeholder="Enter Email"
-          class="input input-bordered my-3 input-primary w-full max-w-xs"
+          className="input input-bordered my-3 input-primary w-full max-w-xs"
         />
         <input
           type="text"
           placeholder="Subject"
-          class="input input-bordered input-primary w-full max-w-xs"
+          className="input input-bordered input-primary w-full max-w-xs"
         />
         <textarea
           name="message"

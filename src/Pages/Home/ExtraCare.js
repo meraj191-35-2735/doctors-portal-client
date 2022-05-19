@@ -4,17 +4,18 @@ import PrimaryButton from "../Shared/PrimaryButton";
 
 const ExtraCare = () => {
   return (
-    <div class="hero min-h-screen ">
-      <div class="hero-content flex-col lg:flex-row">
+    <div className="hero min-h-screen ">
+      <div className="hero-content flex-col lg:flex-row">
         <img
           className="w-full lg:w-1/2 h-full lg:h-1/2 mr-auto lg:mr-10 rounded-lg"
           src={treatment}
+          alt=""
         />
         <div className="ml-10">
-          <h1 class="text-5xl font-bold">
+          <h1 className="text-5xl font-bold">
             Exceptional Dental Care, on Your Terms
           </h1>
-          <p class="py-6">
+          <p className="py-6">
             It is in the seeking of exceptional dental care, that discerning
             patients will want to pay extra close attention to the dental
             practitioner they choose. We enjoy a sterling reputation for the
