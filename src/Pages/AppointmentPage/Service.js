@@ -18,7 +18,7 @@ const Service = ({ service, setTreatment }) => {
         </p>
         <div className="card-actions">
           <label
-            for="booking-modal"
+            htmlFor="booking-modal"
             disabled={slots.length === 0}
             onClick={() => setTreatment(service)}
             className="btn modal-button btn-sm btn-primary text-white uppercase"
