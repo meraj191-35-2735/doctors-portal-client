@@ -3,7 +3,7 @@ import Footer from "../Shared/Footer";
 import AppointmentBanner from "./AppointmentBanner";
 import AvailableAppointments from "./AvailableAppointments";
 
-const AppointmentPage = () => {
+const Appointment = () => {
   const [date, setDate] = useState(new Date());
   return (
     <div>
@@ -14,4 +14,4 @@ const AppointmentPage = () => {
   );
 };
 
-export default AppointmentPage;
+export default Appointment;
