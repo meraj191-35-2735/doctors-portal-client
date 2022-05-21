@@ -1,9 +1,9 @@
 import { format } from "date-fns";
 import React, { useState } from "react";
 import { useQuery } from "react-query";
+import Loading from "../Shared/Loading";
 import BookingModal from "./BookingModal";
 import Service from "./Service";
-import Loading from ".././Shared/Loading";
 
 const AvailableAppointments = ({ date }) => {
   const [treatment, setTreatment] = useState(null);
@@ -29,7 +29,7 @@ const AvailableAppointments = ({ date }) => {
         Available Appointments on {format(date, "PP")}
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {services?.map((service) => (
+        {services.map((service) => (
           <Service
             key={service._id}
             service={service}

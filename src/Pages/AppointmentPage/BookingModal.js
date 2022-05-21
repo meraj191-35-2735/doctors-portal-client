@@ -38,8 +38,8 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             `Already have and appointment on ${data.booking?.date} at ${data.booking?.slot}`
           );
         }
-        refetch();
         setTreatment(null);
+        refetch();
       });
   };
 
@@ -54,8 +54,8 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
           >
             ✕
           </label>
-          <h3 className="font-bold text-center pb-2 text-lg text-secondary">
-            {name}
+          <h3 className="font-bold text-lg text-secondary">
+            Booking for: {name}
           </h3>
           <form
             onSubmit={handleBooking}
