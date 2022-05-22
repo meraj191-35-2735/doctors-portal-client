@@ -16,7 +16,7 @@ const AddDoctor = () => {
     fetch("http://localhost:5000/service").then((res) => res.json())
   );
 
-  const imageStorageKey = "4295ac4d47b569312bea67b440cdbdbb";
+  const imageStorageKey = "a32c190178fb85425c64cab338bdde0e";
 
   const onSubmit = async (data) => {
     const image = data.image[0];
