@@ -10,13 +10,17 @@ const MyAppointments = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/booking?patient=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
+      fetch(
+        `https://still-stream-18986.herokuapp.com/booking?patient=${user.email}`,
+        {
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+          },
+        }
+      )
         .then((res) => {
+          console.log("res", res);
           if (res.status === 401 || res.status === 403) {
             signOut(auth);
             localStorage.removeItem("accessToken");
@@ -28,7 +32,7 @@ const MyAppointments = () => {
           setAppointments(data);
         });
     }
-  }, [user]);
+  }, [user, navigate]);
   return (
     <div>
       <h2 className="text-2xl text-center py-3 font-bold">My Appointments</h2>
